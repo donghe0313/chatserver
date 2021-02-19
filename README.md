@@ -16,3 +16,13 @@
 6. 安装nginx
 
 7. 安装CMake环境
+#### 整体结构
+![1](https://github.com/donghe0313/chatserver/tree/main/pic/1.png)
+#### 数据库设计
+![2](https://github.com/donghe0313/chatserver/tree/main/pic/2.png)
+![3](https://github.com/donghe0313/chatserver/tree/main/pic/3.png)
+#### 服务器集群
+![4](https://github.com/donghe0313/chatserver/tree/main/pic/4.png)
+#### 跨服务器通信
+![5](https://github.com/donghe0313/chatserver/tree/main/pic/5.png)
+
