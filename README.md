@@ -20,6 +20,7 @@
 ![1](https://github.com/donghe0313/chatserver/blob/main/pic/5.png)
 #### 数据库设计
 ![2](https://github.com/donghe0313/chatserver/blob/main/pic/1.png)
+offlinmessage表
 ![3](https://github.com/donghe0313/chatserver/blob/main/pic/2.png)
 #### 服务器集群
 ![4](https://github.com/donghe0313/chatserver/blob/main/pic/3.png)
