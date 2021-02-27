@@ -11,7 +11,7 @@
 6. 安装nginx
 7. 安装CMake环境
 #### 数据库连接池
-
+![1](https://github.com/donghe0313/chatserver/blob/main/pic/6.png)
 可以看出单线程是连接池的优势很明显，但在多线程下优势有所下降，可能是因为频繁的枷锁和解锁耗费了很多时间，
 
 改进方向：使用无锁队列
