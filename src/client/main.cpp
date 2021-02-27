@@ -292,7 +292,7 @@ void readTaskHandler(int clientfd)
             close(clientfd);
             exit(-1);
         }
-
+        //cout<<buffer<<endl;
         // 接收ChatServer转发的数据，反序列化生成json数据对象
         json js = json::parse(buffer);
         int msgtype = js["msgid"].get<int>();

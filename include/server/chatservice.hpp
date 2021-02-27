@@ -1,13 +1,13 @@
 #ifndef CHATSERVICE_H
 #define CHATSERVICE_H
-
-#include <muduo/net/TcpConnection.h>
+#include <mymuduo/TcpServer.h>
+#include <mymuduo/Logger.h>
 #include <unordered_map>
 #include <functional>
 #include <mutex>
 using namespace std;
-using namespace muduo;
-using namespace muduo::net;
+//using namespace muduo;
+//using namespace muduo::net;
 
 #include "redis.hpp"
 #include "groupmodel.hpp"

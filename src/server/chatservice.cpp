@@ -1,10 +1,8 @@
 #include "chatservice.hpp"
 #include "public.hpp"
-#include <muduo/base/Logging.h>
 #include <vector>
 using namespace std;
-using namespace muduo;
-
+using namespace placeholders;
 // 获取单例对象的接口函数
 ChatService *ChatService::instance()
 {
@@ -51,7 +49,9 @@ MsgHandler ChatService::getHandler(int msgid)
     {
         // 返回一个默认的处理器，空操作
         return [=](const TcpConnectionPtr &conn, json &js, Timestamp) {
-            LOG_ERROR << "msgid:" << msgid << " can not find handler!";
+            //LOG_ERROR << "msgid:" << msgid << " can not find handler!";
+            LOG_ERROR ("msgid: %d can not find handler!",msgid);
+
         };
     }
     else
@@ -256,6 +256,7 @@ void ChatService::oneChat(const TcpConnectionPtr &conn, json &js, Timestamp time
         auto it = _userConnMap.find(toid);
         if (it != _userConnMap.end())
         {
+            cout<<js.dump()<<" ******* "<<endl;
             // toid在线，转发消息   服务器主动推送消息给toid用户
             it->second->send(js.dump());
             return;
@@ -348,6 +349,7 @@ void ChatService::handleRedisSubscribeMessage(int userid, string msg)
     auto it = _userConnMap.find(userid);
     if (it != _userConnMap.end())
     {
+        cout<<msg<<endl;
         it->second->send(msg);
         return;
     }
