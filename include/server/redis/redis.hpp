@@ -6,10 +6,6 @@
 #include <functional>
 using namespace std;
 
-/*
-redis作为集群服务器通信的基于发布-订阅消息队列时，会遇到两个难搞的bug问题，解决此问题参考了博客：
-https://blog.csdn.net/QIANGWEIYUAN/article/details/97895611
-*/
 class Redis
 {
 public:
