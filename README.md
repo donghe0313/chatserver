@@ -5,7 +5,7 @@
 
 1. ubuntu linux环境
 2. 安装Json开发库
-3. 安装boost + muduo网络库开发环境，参考博客：
+3. 安装boost + muduo网络库开发环境/或自己写的mymuduo 链接：https://github.com/donghe0313/mymuduo
 4. 安装redis环境
 5. 安装mysql数据库环境
 6. 安装nginx
